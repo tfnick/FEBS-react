@@ -16,6 +16,11 @@ public class FebsResponse extends HashMap<String, Object> {
         return this;
     }
 
+    public FebsResponse success() {
+        this.put("code", 200);
+        return this;
+    }
+
     @Override
     public FebsResponse put(String key, Object value) {
         super.put(key, value);

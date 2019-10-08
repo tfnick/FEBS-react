@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cc.mrbird.febs.blog.dao.BUserMapper">
+
+    <resultMap id="bUser" type="cc.mrbird.febs.blog.entity.BUser">
+        <id column="id" jdbcType="INTEGER" property="id"/>
+        <result column="name" jdbcType="VARCHAR" property="name"/>
+        <result column="username" jdbcType="VARCHAR" property="username"/>
+        <result column="email" jdbcType="VARCHAR" property="email"/>
+        <result column="address_street" jdbcType="VARCHAR" property="addressStreet"/>
+        <result column="address_suite" jdbcType="VARCHAR" property="addressSuite"/>
+        <result column="address_city" jdbcType="VARCHAR" property="addressCity"/>
+        <result column="address_zipcode" jdbcType="VARCHAR" property="addressZipcode"/>
+        <result column="address_geo_lat" jdbcType="VARCHAR" property="addressGeoLat"/>
+        <result column="address_geo_lng" jdbcType="VARCHAR" property="addressGeoLng"/>
+        <result column="phone" jdbcType="VARCHAR" property="phone"/>
+        <result column="website" jdbcType="VARCHAR" property="website"/>
+        <result column="company_name" jdbcType="VARCHAR" property="companyName"/>
+        <result column="company_catch_phrase" jdbcType="VARCHAR" property="companyCatchPhrase"/>
+        <result column="company_bs" jdbcType="VARCHAR" property="companyBs"/>
+    </resultMap>
+</mapper>

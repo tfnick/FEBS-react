@@ -37,7 +37,7 @@ public class RoleController extends BaseController {
     private String message;
 
     @GetMapping
-    @RequiresPermissions("role:view")
+    //@RequiresPermissions("role:view")
     public Map<String, Object> roleList(QueryRequest queryRequest, Role role) {
         return getDataTable(roleService.findRoles(role, queryRequest));
     }
